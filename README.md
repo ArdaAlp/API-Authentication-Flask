@@ -88,16 +88,15 @@ The application will be available at `http://localhost:5000`
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Notes 🔧
-- *This project is for prototyping purposes, and passwords are stored as plain text. Hashing should be used in a production environment.*
-
-- ***To enhance the project**, you could add user roles, token-based authentication, or integrate a frontend framework.*
-
-- *The project language is Turkish and new language support **coming soon...***
-
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Notes 🔧
+- *This project is for prototyping purposes, and passwords are stored as plain text. Hashing should be used in a production environment.*
+
+- ***To enhance the project**, you could add user roles, token-based authentication, or integrate a frontend framework.*
+
+- *The project language is Turkish and new language support **coming soon...***
