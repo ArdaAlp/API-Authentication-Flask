@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body_content %}
+
+<head>
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+
+    <section>
+        <h1>Web Siteye Hoş Geldiniz!</h1>
+
+        <span>
+            <a href="{{ url_for('login') }}"><input type="submit" class="btn btn-login" value="Giriş Yap"></a>
+            <a href="{{ url_for('sign_up') }}"><input type="submit" class="btn btn-signup" value="Kayıt Ol"></a>
+        </span>
+    </section>
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #FFE5D4;
+    color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section span {
+    padding: 1rem;
+}
+
+section span a {
+    margin: 1rem;
+}
+
+/* Modern Minimal Button Styles */
+.button-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.btn-login {
+  background-color: #E8896B;
+  color: #FFF5E8;
+  box-shadow: 0 2px 8px rgba(232, 137, 107, 0.3);
+}
+
+.btn-login:hover {
+  background-color: #DC7556;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 137, 107, 0.4);
+}
+
+.btn-login:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 107, 0.3);
+}
+
+.btn-signup {
+  background-color: transparent;
+  color: #E8896B;
+  border: 2px solid #E8896B;
+}
+
+.btn-signup:hover {
+  background-color: #E8896B;
+  color: #FFF5E8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 137, 107, 0.3);
+}
+
+.btn-signup:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(232, 137, 107, 0.2);
+}
+
+/* Focus states for accessibility */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(232, 137, 107, 0.3);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+
+{% if messages %}
+
+<ul class="flash-message {{ category }}">
+    <div class="bar {{ category }}"></div>
+    {% for category, message in messages %}
+    <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endwith %}
+
+{% block body_content %}
+
+{% endblock %}
+
+<script>
+    const flashMessage = document.querySelector('.flash-message');
+
+    if (flashMessage) {
+        setTimeout(() => {
+            flashMessage.style.animation = 'fadeOut 0.1s ease-out';
+            flashMessage.style.opacity = '0';
+        }, 3000);
+    }
+</script>
+
+</html>

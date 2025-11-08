@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body_content %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <title>Hoş Geldin</title>
+</head>
+
+<body>
+    <div class="home-container">
+        <div class="welcome-card">
+            <h2 class="greeting">Hoş Geldin,</h2>
+            <h1 class="username">{{ username }}</h1>
+            <p class="subtitle">Seni tekrar görmek harika! Bugün ne yapmak istersin?</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="{{ url_for('profile', username=username) }}"><button class="btn btn-primary">
+                    Profilim
+                </button></a>
+
+            <a href="{{ url_for('logout') }}"><button class="btn btn-secondary">
+                    Çıkış Yap
+                </button></a>
+        </div>
+
+        <div class="decorative-element">
+            <div class="decorative-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+
+{% endblock %}

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #FFE5D4 0%, #FFDCC4 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home-container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.welcome-card {
+    background-color: #FFF5E8;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(232, 137, 107, 0.2);
+    padding: 60px 40px;
+    margin-bottom: 30px;
+}
+
+.greeting {
+    color: #8B6854;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+.username {
+    color: #E8896B;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #C57B5F;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #E8896B;
+    color: #FFF5E8;
+    box-shadow: 0 4px 12px rgba(232, 137, 107, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #DC7556;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(232, 137, 107, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #E8896B;
+    border: 2px solid #E8896B;
+}
+
+.btn-secondary:hover {
+    background-color: #E8896B;
+    color: #FFF5E8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(232, 137, 107, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.decorative-element {
+    margin: 40px 0;
+    opacity: 0.3;
+}
+
+.decorative-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #E8896B;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.info-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-card {
+    background-color: #FFF5E8;
+    width: 100%;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 12px rgba(232, 137, 107, 0.15);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-card ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card li {
+    list-style: none;
+    color: #8B6854;
+    margin: 0 1rem;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(232, 137, 107, 0.25);
+}
+
+.info-card-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.info-card-title {
+    color: #E8896B;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.info-card-text {
+    color: #C57B5F;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .welcome-card {
+        padding: 40px 24px;
+    }
+
+    .greeting {
+        font-size: 22px;
+    }
+
+    .username {
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
