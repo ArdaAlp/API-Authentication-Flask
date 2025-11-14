@@ -7,6 +7,86 @@
 
 # Flask Authentication System 🔐
 
+> 🇹🇷 **Türkçe açıklama aşağıda bulunmaktadır** | Turkish description below
+> 
+> 🇬🇧 **English description follows** | İngilizce açıklama devam etmektedir
+
+## Türkçe Açıklama 🇹🇷
+
+Flask kullanılarak geliştirilmiş modern bir kimlik doğrulama sistemi. Kullanıcı kaydı, giriş, şifre sıfırlama işlevselliği ve temiz bir kontrol paneli arayüzü içerir.
+
+### Özellikler 🌟
+
+- E-posta Doğrulamalı Kullanıcı Kaydı
+- Güvenli Giriş Sistemi
+- Şifre Sıfırlama İşlevselliği
+- Kullanıcı Kontrol Paneli
+- Profil Yönetimi
+- Duyarlı (Responsive) Tasarım
+- Temiz ve Modern Kullanıcı Arayüzü
+
+### Kurulum 📥
+
+1. Depoyu klonlayın
+```bash
+git clone https://github.com/ArdaAlp/API-Authentication-Flask.git
+```
+
+2. Sanal ortam oluşturun
+```bash
+python -m venv venv
+```
+
+3. Sanal ortamı etkinleştirin
+```bash
+# Windows
+.\venv\Scripts\activate
+
+# Linux/macOS
+source venv/bin/activate
+```
+
+4. Bağımlılıkları yükleyin
+```bash
+pip install -r requirements.txt
+```
+
+5. Uygulamayı çalıştırın
+```bash
+flask run
+```
+
+Uygulama `http://localhost:5000` adresinde çalışacaktır
+
+### Kullanım 💻
+
+1. E-posta adresinizle yeni bir hesap oluşturun
+2. E-posta adresinizi doğrulayın
+3. Kontrol paneline erişmek için giriş yapın
+4. Profilinizi ve ayarlarınızı yönetin
+5. Gerekirse şifre sıfırlama özelliğini kullanın
+
+### Katkıda Bulunma 🤝
+
+Katkılarınızı bekliyoruz! Lütfen Pull Request göndermekten çekinmeyin.
+
+1. Depoyu fork edin
+2. Özellik dalınızı oluşturun (`git checkout -b feature/HarikaBirOzellik`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Harika bir özellik ekle'`)
+4. Dalınızı push edin (`git push origin feature/HarikaBirOzellik`)
+5. Bir Pull Request açın
+
+### Notlar 🔧
+- *Bu proje prototipleme amacıyla hazırlanmıştır ve şifreler düz metin olarak saklanmaktadır. Üretim ortamında şifreleme kullanılmalıdır.*
+
+- ***Projeyi geliştirmek için**, kullanıcı rolleri, token tabanlı kimlik doğrulama ekleyebilir veya bir frontend framework'ü entegre edebilirsiniz.*
+
+- *Proje dili Türkçe'dir ve yeni dil desteği **yakında gelecek...***
+
+---
+
+## English Description 🇬🇧
+
 A modern authentication system built with Flask, featuring user registration, login, password reset functionality, and a clean dashboard interface.
 
 ## Features 🌟
